@@ -22,7 +22,7 @@ function secondsToMinutesSeconds(seconds) {
 
 let currentsong = new Audio();
  async function getSongs(){
-       let songs_container = await fetch("http://127.0.0.1:5500/songs/");
+       let songs_container = await fetch("https://adityaross.github.io/spotify-clone-1.1/songs/");
        let songs = await songs_container.text();
        let div = document.createElement("div");
         div.innerHTML = songs;
